@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: 15rem;
+  height: 15rem;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  width: 7rem;
+  height: 7rem;
+  background-color: #fff;
+}
+
+.ractangle {
+  width: 8rem;
+  height: 4rem;
+  background-color: blueviolet;
+}
+
+.circle {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: salmon;
+}
+
+.rightTrangleLeft {
+  border-bottom: 7rem solid rgb(0, 55, 255);
+  border-right: 7rem solid transparent;
+}
+
+.rightTrangleRight {
+  border-bottom: 7rem solid rgb(81, 255, 0);
+  border-left: 7rem solid transparent;
+}
+.diamond {
+  height: 7rem;
+  rotate: 45deg;
+  width: 7rem;
+  background-color: #0a0944;
+}
+.trangle {
+  border-left: 5rem solid transparent;
+  border-right: 5rem solid transparent;
+  border-bottom: 7rem solid #4b81ab;
+}
+
+.star {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: red;
+
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  rotate: 35deg;
+}
+.star:before {
+  content: "";
+  border-bottom: 80px solid red;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  top: -45px;
+  left: -65px;
+  display: block;
+  rotate: -35deg;
+}
+
+.star:after {
+  content: "";
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  rotate: -70deg;
+}
+
+.triangleDown {
+  border-style: solid;
+  border-width: 120px 70px 0 70px;
+  border-color: rgb(255, 0, 170) transparent transparent transparent;
+}
+
+.btn {
+  margin-top: 2rem;
+  background: lightcoral;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.btnFront {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: lightcoral(345deg 100% 47%);
+  color: white;
+}
+.btn:hover .btnFront {
+  color: hsl(345deg 100% 47%);
+  background-color: #fff;
+  border: 1px solid #eaf6f6;
+}
+
+.btn:active .btnFront {
+  transform: translateY(-2px);
+}
