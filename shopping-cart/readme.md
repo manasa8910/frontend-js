@@ -1,6 +1,6 @@
 ## Hosted Link
 
-## [Hosted Link](https://nirzon47-js-cart.vercel.app/)
+## [Hosted Link](https://manasa8910.github.io/frontend-js/shopping-cart/)
 
 Key JavaScript Functions and Variables:
 
