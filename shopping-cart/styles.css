@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  gap: 15px;
+  font-size: 20px;
+  padding-inline: 5px;
+}
+
+#left-contianer {
+  border: 5px solid lightslategrey;
+  padding: 5px;
+  width: 500px;
+  min-height: 300px;
+  text-align: center;
+}
+
+#right-container {
+  border: 5px solid lightslategrey;
+  padding: 5px;
+  width: 250px;
+  min-height: 306px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#right-container #cartDataWrapper {
+  flex-grow: 1;
+}
+
+#productDataWrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#cartDataWrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.product-wrapper,
+.cart-product-wrapper {
+  background-color: lightslategrey;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.counter-wrapper {
+  background-color: rgb(35, 180, 180);
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10px;
+  padding-block: 5px;
+  align-items: center;
+  width: 100px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.counter-wrapper span:nth-child(odd) {
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.counter-wrapper span:nth-child(odd):hover {
+  transform: scale(1.5);
+  color: black;
+}
+
+#totalContainer {
+  background-color: rgb(35, 180, 180);
+  border: 2px solid black;
+  font-size: 26px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 5px;
+}
+
+#totalContainer {
+  margin-top: 5px;
+  bottom: 5px;
+  width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  #left-contianer {
+    width: 100%;
+  }
+
+  #right-container {
+    width: 100%;
+  }
+
+  .counter-wrapper {
+    width: 90px;
+  }
+}
