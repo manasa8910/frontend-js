@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 5px;
+  background-color: #ffffff;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+}
+
+.keyboard-display {
+  font-size: 3rem;
+  width: 550px;
+  /* margin: 10px 0; */
+}
+
+.keycode-display {
+  width: 400px;
+  font-size: 3rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: rgb(0, 255, 170);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+}
+
+#pressed-key {
+  color: rgb(0, 255, 170);
+  font-size: 3rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#keyHistoryDisplay {
+  font-size: large;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#keyCodeText {
+  font-size: 3rem;
+  color: black;
+  -webkit-text-stroke-width: 0px;
+}
+
+@media screen and (max-width: 550px) {
+  .keyboard-display,
+  #pressed-key {
+    font-size: 2.5rem;
+  }
+
+  .keycode-display {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .keyboard-display,
+  #pressed-key {
+    font-size: 2rem;
+  }
+
+  .keycode-display {
+    font-size: 3rem;
+  }
+}
