@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Time Character Count</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="char-counter-container shadow-animate">
+        <div class="text">
+          <span style="--i: 1">R</span>
+          <span style="--i: 2">e</span>
+          <span style="--i: 3">a</span>
+          <span style="--i: 4">l&nbsp;</span>
+
+          <span style="--i: 5">T</span>
+          <span style="--i: 6">i</span>
+          <span style="--i: 7">m</span>
+          <span style="--i: 8">e&nbsp;</span>
+
+          <span style="--i: 9">C</span>
+          <span style="--i: 10">h</span>
+          <span style="--i: 11">a</span>
+          <span style="--i: 12">r</span>
+          <span style="--i: 13">a</span>
+          <span style="--i: 14">c</span>
+          <span style="--i: 15">t</span>
+          <span style="--i: 16">e</span>
+          <span style="--i: 17">r&nbsp;</span>
+
+          <span style="--i: 18">C</span>
+          <span style="--i: 19">o</span>
+          <span style="--i: 20">u</span>
+          <span style="--i: 21">n</span>
+          <span style="--i: 22">t</span>
+          <span style="--i: 23">e</span>
+          <span style="--i: 24">r</span>
+        </div>
+        <!-- <h1>Character Counter</h1> -->
+        <textarea
+          id="inputArea"
+          placeholder="Please write your text here..."
+          rows="5"
+          cols="11"
+          maxlength="50"
+        ></textarea>
+        <div class="output-counter">
+          <div>Total Characters :<span id="totalChars"> 0</span></div>
+          <div>Remaining :<span id="remainingChars"> 50</span></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
