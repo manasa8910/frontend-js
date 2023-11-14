@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/stopwatch.png" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="timer-display">
+          <div id="timer" class="timer">00:00:00:00</div>
+          <div class="timerName">
+            <span>Hours</span>
+            <span class="marginLeft">Minutes</span>
+            <span class="marginLeft">Second</span>
+            <span>Milisecond</span>
+          </div>
+        </div>
+
+        <div id="buttons" class="buttons">
+          <button id="startBtn" class="btn">Start</button>
+          <button id="lapBtn" class="btn">Lap</button>
+          <button id="stopBtn" class="btn">Stop</button>
+          <button id="resetBtn" class="btn">Reset</button>
+        </div>
+      </section>
+
+      <section id="lapResult">
+        <div class="lapResult">
+          <!-- <div class="count">00</div>
+          <div class="lapTime">00:00:00:00/div> -->
+          <!-- <div class="lapDiff">+00:00:00</div> -->
+        </div>
+      </section>
+    </main>
+
+    <audio id="audio1" controls style="display: none">
+      <source
+        src="./assets/mixkit-attention-bell-ding-586.wav"
+        type="audio/mpeg"
+      />
+    </audio>
+  </body>
+</html>
