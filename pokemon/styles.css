@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@600&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-color: pink;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 4rem;
+  color: purple;
+  margin: 2rem 0;
+  /* text-shadow: 5px 5px #ffff00; */
+
+  /* filter: drop-shadow(-10px 10px 20px #fff000); */
+}
+
+#submit,
+#reset,
+#pokemonType,
+#searchInput {
+  font-size: 1.2rem;
+  /* padding: 1rem; */
+  background-color: purple;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: white;
+}
+
+#pokemonType {
+  background-color: #f8fcfb;
+  color: #4364f7;
+}
+
+#submit:hover,
+#reset:hover {
+  color: #4364f7;
+  background-color: #fff;
+}
+
+#searchInput {
+  outline: none;
+  width: 100%;
+}
+
+/* .pokemon-card {
+  box-shadow: 2px 2px 2px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightgreen;
+  width: 14rem;
+  height: 16rem;
+  padding: 10px;
+  margin-bottom: 1.1rem;
+} */
+
+#pokemonContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+#loader {
+  display: none;
+}
+#loader svg {
+  margin-top: 4rem;
+  width: 5rem;
+}
+
+.card {
+  perspective: 1000px;
+  background-color: transparent;
+  width: 14rem;
+  height: 16rem;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+.card:focus {
+  outline: 0;
+}
+
+.card:hover .card-inner,
+.card:focus .card-inner {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.front p {
+  color: #7a0a0a;
+  font-weight: bold;
+}
+
+.front {
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  background: linear-gradient(to left, purple, violet);
+  padding: 0.7rem;
+}
+.back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  background: linear-gradient(to right, #4364f7, #6fb1fc);
+}
+
+.card:hover h3 {
+  cursor: pointer;
+  color: #2b2828;
+}
+
+.card h5 {
+  border-radius: 0.4rem;
+  border: 2px solid purple;
+  padding: 4px 8px;
+}
