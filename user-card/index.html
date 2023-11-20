@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>User Information Card</title>
+
+		<!-- Tailwind -->
+		<link rel="stylesheet" href="styles/output.css" />
+
+		<!-- Scripts -->
+		<script src="script.js" defer></script>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	</head>
+	<body class="grid w-screen min-h-screen p-8 place-content-center">
+		<h1 class="pb-6 text-3xl font-bold text-center">User Information Card</h1>
+		<div class="card-container">
+			<div class="card-body">
+				<table class="text-xl font-semibold">
+					<tr class="table-rows">
+						<td class="font-bold">First Name:</td>
+						<td class="text-primary" id="first-name">&nbsp;</td>
+					</tr>
+					<tr class="table-rows">
+						<td class="font-bold">Last Name:</td>
+						<td class="text-primary" id="last-name">&nbsp;</td>
+					</tr>
+					<tr class="table-rows">
+						<td class="font-bold">Country:</td>
+						<td class="text-primary" id="country">&nbsp;</td>
+					</tr>
+					<tr class="table-rows">
+						<td class="font-bold">Phone Number:</td>
+						<td class="text-primary" id="phone-number">&nbsp;</td>
+					</tr>
+					<tr class="table-rows">
+						<td class="font-bold">City:</td>
+						<td class="text-primary" id="city">&nbsp;</td>
+					</tr>
+					<tr class="table-rows">
+						<td class="font-bold">State:</td>
+						<td class="text-primary" id="state">&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<button class="m-2 mt-4 btn btn-secondary" id="reset">RESET</button>
+
+		<div class="flex justify-center m-4 gap-x-8">
+			<p class="text-right">Change Theme</p>
+			<input type="checkbox" value="light" class="toggle theme-controller" />
+		</div>
+	</body>
+</html>

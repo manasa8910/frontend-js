@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.card-container {
+		@apply p-6 card w-full md:w-[26rem] bg-neutral text-neutral-content;
+	}
+
+	.table-rows {
+		@apply flex flex-col items-center justify-between p-1 md:flex-row;
+	}
+}
