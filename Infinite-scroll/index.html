@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Infinite Scroll Gallery - Javascript</title>
+  </head>
+  <body>
+    <h1>ENDLESS SCROLL</h1>
+
+    <!-- loader  -->
+    <div id="loader" id="loader">
+      <img src="spinner.svg" alt="loading" />
+    </div>
+
+    <section class="img-container" id="img-container"></section>
+    <script>
+      window.onload = function () {
+        document.getElementById("loader").style.display = "none";
+      };
+    </script>
+  </body>
+</html>
