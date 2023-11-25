@@ -5,8 +5,9 @@ const inputColor = document.getElementById("colorPicker");
 
 const createNoteCard = (inputValue, inputColor = "brown") => {
   const noteTitleSpan = document.createElement("span");
-  noteTitleSpan.innerText = inputValue;
+  noteTitleSpan.textContent = inputValue;
   noteTitleSpan.classList.add("noteTitleSpan");
+
   const closeButtonSpan = document.createElement("span");
   closeButtonSpan.classList.add("close-btn");
   closeButtonSpan.innerText = "❌";

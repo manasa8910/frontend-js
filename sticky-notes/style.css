@@ -123,4 +123,6 @@ textarea {
 
 .noteTitleSpan {
   color: white;
+  inline-size: 95%;
+  overflow-wrap: break-word;
 }

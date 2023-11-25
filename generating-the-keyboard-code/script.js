@@ -6,9 +6,10 @@ const maxKeyHistoryLength = 8;
 const keyHistory = [];
 
 document.addEventListener("keydown", (event) => {
-  keyCodeDisplay.style.display = "block";
   // Play a sound on keypress
   playKeyPressSound();
+
+  keyCodeDisplay.style.display = "block";
 
   keyDisplay.innerHTML = `You pressed : <span id="pressed-key">${event.key}</span>`;
   keyCodeDisplay.innerHTML = `<span id="keyCodeText">keycode :</span><span> ${event.keyCode}</span>`;
